@@ -15,7 +15,7 @@ require_once  'check-session.php';
 		<p>CustomerID: 1
 		<p>Name: Pauline Jones<br><br>
 		<h2> Options</h2>
-		<a href= 'http://localhost/Final%20Project%20Pages/customer-view-order.php'>View/add/update/delete an Order</a><br>
+		<a href= 'http://localhost/Final%20Project/vieworders.php'>View/add/update/delete an Order</a><br>
 		<a href= 'http://localhost/Final%20Project%20Pages/employee-products-changes.php'>Make a payment</a><br>
 		<p>Submit a return<p>
 			
