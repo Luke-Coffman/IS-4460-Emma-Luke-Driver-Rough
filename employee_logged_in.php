@@ -11,11 +11,11 @@ require_once  'check-session.php';
 		<p>Name: Luke Coffman<br><br>
 		<h2> Options</h2>
 		<a href= 'http://localhost/Final%20Project%20Pages/employee-employee-changes.php'>View/add/update/delete Employees</a><br>
-		<a href= 'http://localhost/Final%20Project%20Pages/employee-customer-changes.php'>View/add/update/delete Customers</a><br>
-		<a href= 'http://localhost/Final%20Project%20Pages/employee-products-changes.php'>View/add/update/delete Products</a><br>
-		<a href= 'http://localhost/Final%20Project%20Pages/employee-products-changes.php'>View/add/update/delete Raw Materials</a><br>
-		<a href= 'http://localhost/Final%20Project%20Pages/employee-products-changes.php'>View/add/update/delete Returns</a><br>
-		<a href= 'http://localhost/Final%20Project%20Pages/employee-products-changes.php'>View/add/update/delete Orders</a><br>
+		<a href= 'http://localhost/Final%20Project/viewcustomer.php'>View/add/update/delete Customers</a><br>
+		<a href= 'http://localhost/Final%20Project/viewproducts.php'>View/add/update/delete Products</a><br>
+		<a href= 'http://localhost/Final%20Project/viewrawmaterial.php'>View/add/update/delete Raw Materials</a><br>
+		<a href= 'http://localhost/Final%20Project/viewReturns.php'>View/add/update/delete Returns</a><br>
+		<a href= 'http://localhost/Final%20Project/vieworders.php'>View/add/update/delete Orders</a><br>
 		
 		
 		</p>
