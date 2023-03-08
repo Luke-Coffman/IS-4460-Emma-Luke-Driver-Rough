@@ -1,7 +1,7 @@
 <?php
 
 //import credentials for db
-$page_roles=array('admin','customer','employee');
+$page_roles=array('admin');
 require_once  'check-session.php';
 require_once  'login.php';
 
@@ -16,14 +16,14 @@ if(isset($_POST['delete']))
 {
 	$Order_ID = $_POST['Order_ID'];
 
-	$query = "DELETE FROM order WHERE Order_ID = '$Order_ID' ";
+	$query = "DELETE FROM order WHERE Order_ID='$Order_ID' ";
 	
 	//Run the query
 	$result = $conn->query($query); 
 	if(!$result) die($conn->error);
 	
 	//Return to the viewAllClassics page
-	header("Location: customer-view-order.php?");
+	header("Location: admin-view-orders.php?");
 	
 }
 

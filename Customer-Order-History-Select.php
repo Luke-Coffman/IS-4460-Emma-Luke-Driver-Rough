@@ -1,3 +1,8 @@
+<?
+$page_roles=array('admin','customer');
+require_once  'check-session.php';
+?>
+
 <HTML>
 
 	<head>
@@ -16,7 +21,6 @@
 </HTML>
 
 <?php
-
 require_once  'login.php';
 
 $conn = new mysqli($hn, $un, $pw, $db);

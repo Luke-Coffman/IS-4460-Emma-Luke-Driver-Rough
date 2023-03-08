@@ -1,8 +1,8 @@
 <?php
 
 //import credentials for db
-$page_roles=array('admin','customer','employee');
 require_once  'check-session.php';
+$page_roles=array('admin','customer');
 require_once  'login.php';
 
 
@@ -14,9 +14,9 @@ if($conn->connect_error) die($conn->connect_error);
 
 if(isset($_POST['delete']))
 {
-	$Order_ID = $_POST['Order_ID'];
+	$id = $_POST['id'];
 
-	$query = "DELETE FROM order WHERE Order_ID = '$Order_ID' ";
+	$query = "DELETE FROM order WHERE Order_ID='$Order_ID' ";
 	
 	//Run the query
 	$result = $conn->query($query); 

@@ -1,3 +1,6 @@
+<?php
+require_once  'check-session.php';
+?>
 <HTML>
 
 	<head>
@@ -25,3 +28,4 @@
 
 
 </HTML>
+

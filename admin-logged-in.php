@@ -1,3 +1,9 @@
+<?php
+$page_roles=array('admin');
+require_once  'check-session.php';
+
+?>
+
 <HTML>
 
 	<head>
@@ -14,8 +20,8 @@
 		<p>View/add/update/delete Returns<p>
 		<p>View/add/update/delete Orders<p>
 		
-		<a href= 'http://localhost/Final%20Project%20Pages/Customer-Order-History-Select.php'>View Order History<a><br>
-		<a href= 'http://localhost/Final%20Project%20Pages/employee-customer-changes.php'>View/add/update/delete an Order</a><br>
+		<a href= 'http://localhost/Final%20Project%20Pages/admin-view-orders.php'>View Order History<a><br>
+		<a href= 'http://localhost/Final%20Project%20Pages/admin-customer-changes.php'>View/add/update/delete an Order</a><br>
 		<a href= 'http://localhost/Final%20Project%20Pages/employee-products-changes.php'>Make a payment</a><br>
 		<p>Submit a return<p>
 		

@@ -3,26 +3,30 @@ $page_roles=array('admin','customer');
 require_once  'check-session.php';
 ?>
 
-<html>
+<HTML>
+
 	<head>
-	<title>Customer Orders</title>
+	<title>Customer-Order-History</title>
 	</head>
-		<h1>My Orders</h1>
-		
-		<form action= 'http://localhost/Final%20Project%20Pages/customer-add-order.php'> <button type = 'submit'> Add an order </button><br><br>
+		<h1>Order History </h1>	
+		</p>
 	<body>
 	
 	</body>
-</html>
+
+
+
+
+
+</HTML>
 
 <?php
-
 require_once  'login.php';
 
 $conn = new mysqli($hn, $un, $pw, $db);
 if($conn->connect_error) die($conn->connect_error);
 
-$query = "SELECT * FROM orders WHERE CUST_ID = 1";
+$query = "SELECT * FROM orders";
 
 $result = $conn->query($query); 
 if(!$result) die($conn->error);
@@ -36,16 +40,15 @@ for($j=0; $j<$rows; $j++)
 
 echo <<<_END
 	<pre>
-	Order_id: $row[Order_ID]
-	Emp_ID: $row[EMP_ID]
-	Customer_ID: $row[CUST_ID]
+	Order_ID: $row[Order_ID]
+	EMP_ID: $row[EMP_ID]
+	CUST_ID: $row[CUST_ID]
 	Date: $row[DATE]
-	Total Price: $row[Total_Price]
-	Payment ID: $row[PMT_ID]
+	Total_Price: $row[Total_Price]
 	Description: $row[Description]
 	</pre>
 	
-	<form action='deleteorder.php' method='post'>
+	<form action='deleteorder-admin.php' method='post'>
 		<input type='hidden' name='delete' value='yes'>
 		<input type='hidden' name='Order_ID' value='$row[Order_ID]'>
 		<input type='submit' value='DELETE ORDER'>	
