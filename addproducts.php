@@ -1,3 +1,9 @@
+<?php
+$page_roles=array('admin','employee');
+require_once  'check-session.php';
+
+?>
+
 <html>
 	<head>
 	
@@ -5,13 +11,14 @@
 	
 	<body>
 	<h1> Add a Product </h1>
+	<a href = 'http://localhost/Final%20Project%20Pages/viewproducts.php'>Back to Product List</a><br><br>
 		<form method='post' action='addproducts.php'>
 			<pre>
 				ProductID: <input type='text' name='ProductID'>
 				ProductName: <input type='text' name='ProductName'>
 				Price: <input type='text' name='Price'>
 				Inventory: <input type='text' name='Inventory'>
-				SkiType: <input type='text' name='SkiType'>
+				SkiType: <input type='text' name='Ski_Type'>
 				<input type='submit' value='Add Product'>
 			</pre>
 		</form>
@@ -35,11 +42,11 @@ if(isset($_POST['ProductID']))
 	$ProductName = $_POST['ProductName'];
 	$Price = $_POST['Price'];
 	$Inventory = $_POST['Inventory'];
-	$SkiType = $_POST['SkiType'];
+	$Ski_Type = $_POST['Ski_Type'];
 		
 	//echo $isbn.'<br>';
 	
-	$query = "INSERT INTO Products (ProductID, ProductName, Price, Inventory, SkiType) VALUES ('$ProductID', '$ProductName', '$Price', '$Inventory', '$SkiType')";
+	$query = "INSERT INTO Products (ProductID, ProductName, Price, Inventory, Ski_Type) VALUES ('$ProductID', '$ProductName', '$Price', '$Inventory', '$Ski_Type')";
 	
 	//echo $query.'<br>';
 	$result = $conn->query($query); 

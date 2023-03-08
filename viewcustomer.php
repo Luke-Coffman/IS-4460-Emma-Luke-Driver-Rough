@@ -1,3 +1,8 @@
+<?php
+$page_roles=array('admin','employee');
+require_once  'check-session.php';
+
+?>
 <html>
 
 <head>
@@ -8,7 +13,8 @@
 
 <body>
 
-<h1>Customers</h1>
+<h1>List of Customers</h1>
+<a href = 'http://localhost/Final%20Project%20Pages/admin-logged-in.php'>Back to Admin Homepage</a><br><br>
 <a href="addcustomer.php"><button>Add Customer</button></a>
 
 <?php

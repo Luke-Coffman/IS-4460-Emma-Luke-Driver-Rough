@@ -1,18 +1,15 @@
-
+<?php
+$page_roles=array('admin');
+require_once  'check-session.php';
+?>
 <HTML>
 
 	<head>
 	<title>Employee-Employee-Changes</title>
 	</head>
 		<h1>Enter The EmployeeID You Want To Edit</h1>
-		<p> EmployeeID:
-		<form method='post' action='employee-employee-changes.php'>
-			<input type='text' name='Employee Number'><br>
-		</form>
-		<form action= 'employee-employee-changes.php'> <button type='submit'> Submit</button>	
-		<h2> Or </h2>
-		<form action= 'employee-employee-changes.php'> <button type='submit'>Add New Employee</button>
-			
+		<a href = 'http://localhost/Final%20Project%20Pages/admin-logged-in.php'>Back to Admin Homepage</a><br><br>
+		<form action= 'http://localhost/Final%20Project%20Pages/add-employee.php'> <button type='submit'>Add New Employee</button>	
 		</p>
 	<body>
 	
@@ -26,12 +23,12 @@
 <?php
 
 require_once  'login.php';
-require_once  'check-session.php';
+
 
 $conn = new mysqli($hn, $un, $pw, $db);
 if($conn->connect_error) die($conn->connect_error);
 
-$query = "SELECT * FROM employees";
+$query = "SELECT * FROM employee";
 
 $result = $conn->query($query); 
 if(!$result) die($conn->error);
@@ -45,18 +42,15 @@ for($j=0; $j<$rows; $j++)
 
 echo <<<_END
 	<pre>
-	Order_id: $row[Order_ID]
-	Emp_ID: $row[EMP_ID]
-	Customer_ID: $row[CUST_ID]
-	Date: $row[DATE]
-	Total Price: $row[Total_Price]
-	Payment ID: $row[PMT_ID]
-	Description: $row[Description]
+	employeeid: $row[employeeid]
+	lastname: $row[lastname]
+	firstname: $row[firstname]
+	userid: $row[userid]
 	</pre>
 	
-	<form action='deleteorder.php' method='post'>
+	<form action='delete-employee.php' method='post'>
 		<input type='hidden' name='delete' value='yes'>
-		<input type='hidden' name='Order_ID' value='$row[Order_ID]'>
+		<input type='hidden' name='employeeid' value='$row[employeeid]'>
 		<input type='submit' value='DELETE ORDER'>	
 	</form>
 	

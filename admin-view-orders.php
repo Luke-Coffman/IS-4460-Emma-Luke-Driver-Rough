@@ -10,6 +10,9 @@ require_once  'check-session.php';
 	</head>
 		<h1>Order History </h1>	
 		</p>
+		<a href = 'http://localhost/Final%20Project%20Pages/admin-logged-in.php'>Back to Admin Homepage</a><br><br>
+		<a href="admin-add-order.php"><button>Add Order</button></a>
+		
 	<body>
 	
 	</body>

@@ -1,3 +1,9 @@
+<?php
+$page_roles=array('admin','employee');
+require_once  'check-session.php';
+
+?>
+
 <html>
 
 <head>
@@ -8,7 +14,8 @@
 
 <body>
 
-<h1>Returns</h1>
+<h1>Return List</h1>
+<a href = 'http://localhost/Final%20Project%20Pages/admin-logged-in.php'>Back to Admin Homepage</a><br><br>
 <a href="addReturns.php"><button>Add Return</button></a>
 
 <?php

@@ -1,9 +1,16 @@
+<?php
+$page_roles=array('admin','employee');
+require_once  'check-session.php';
+
+?>
+
 <html>
 	<head>
 	
 	</head>
 	
 	<body>
+	<h1> Add A Customer</h1>
 		<form method='post' action='addcustomer.php'>
 			<pre>
 				CustomerID: <input type='text' name='customerid'>

@@ -1,3 +1,9 @@
+<?php
+$page_roles=array('admin','employee');
+require_once  'check-session.php';
+
+?>
+
 <html>
 
 <head>
@@ -9,6 +15,7 @@
 <body>
 
 <h1>Products</h1>
+<a href = 'http://localhost/Final%20Project%20Pages/admin-logged-in.php'>Back to Admin Homepage</a><br><br>
 <a href="addproducts.php"><button>Add Product</button></a>
 
 <?php
@@ -37,7 +44,7 @@ echo <<<_END
 	ProductName: $row[ProductName]
 	Price: $row[Price]
 	Inventory: $row[Inventory]
-	SkiType: $row[SkiType]
+	Ski_Type: $row[Ski_Type]
 	</pre>
 	
 	<form action='deleteproducts.php' method='post'>
