@@ -8,7 +8,7 @@
 
 <body>
 
-<h1>Returns</h1>
+<h1>Products</h1>
 <a href="addproducts.php"><button>Add Product</button></a>
 
 <?php
