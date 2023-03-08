@@ -11,10 +11,9 @@ if($conn->connect_error) die($conn->connect_error);
 
 if(isset($_POST['delete']))
 {
-	$returnid = $_POST['ReturnID'];
+	$ReturnID = $_POST['ReturnID'];
 
-	$query = "DELETE FROM Returns (ReturnID, Date, OrderID) VALUES ('$ReturnID', '$Date', '$OrderID')";
-	
+	$query = "DELETE FROM Returns WHERE ReturnID = '$ReturnID' ";	
 	//Run the query
 	$result = $conn->query($query); 
 	if(!$result) die($conn->error);

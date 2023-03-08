@@ -11,10 +11,10 @@ if($conn->connect_error) die($conn->connect_error);
 
 if(isset($_POST['delete']))
 {
-	$returnid = $_POST['customerid'];
+	$customerid = $_POST['customerid'];
 
-	$query = "DELETE FROM customer (customerid, firstname, lastname, streetaddress, city, state, zipcode, userid) VALUES ('$customerid', '$firstname', '$lastname', '$streetaddress', '$city', '$state', '$zipcode', '$userid')";
-	
+	$query = "DELETE FROM customer WHERE customerid = '$customerid' ";
+		
 	//Run the query
 	$result = $conn->query($query); 
 	if(!$result) die($conn->error);

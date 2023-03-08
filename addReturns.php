@@ -4,11 +4,12 @@
 	</head>
 	
 	<body>
-		<form method='post' action='addReturn.php'>
+	<h1> Add Returns </h1>
+		<form method='post' action='addReturns.php'>
 			<pre>
-				ReturnID: <input type='text' name='returnid'>
-				Date: <input type='text' name='date'>
-				OrderID: <input type='text' name='orderid'>
+				ReturnID: <input type='text' name='ReturnID'>
+				Date: <input type='text' name='Date'>
+				OrderID: <input type='text' name='OrderID'>
 				<input type='submit' value='Add Return'>
 			</pre>
 		</form>

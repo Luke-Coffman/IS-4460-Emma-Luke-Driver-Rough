@@ -11,11 +11,11 @@ if($conn->connect_error) die($conn->connect_error);
 
 if(isset($_POST['delete']))
 {
-	$returnid = $_POST['ReturnID'];
+	$ProductID = $_POST['ProductID'];
 
-	$query = "DELETE FROM Products (ProductID, ProductName, Price, Inventory, SkiType) VALUES ('$ProductID', '$ProductName', '$Price', '$Inventory', '$SkiType')";
+	$query = "DELETE FROM Products WHERE ProductID = '$ProductID' ";
 	
-	//Run the query
+		//Run the query
 	$result = $conn->query($query); 
 	if(!$result) die($conn->error);
 	

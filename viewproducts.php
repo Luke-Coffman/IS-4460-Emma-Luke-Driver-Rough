@@ -42,7 +42,7 @@ echo <<<_END
 	
 	<form action='deleteproducts.php' method='post'>
 		<input type='hidden' name='delete' value='yes'>
-		<input type='hidden' name='ReturnID' value='$row[ReturnID]'>
+		<input type='hidden' name='ProductID' value='$row[ProductID]'>
 		<input type='submit' value='DELETE PRODUCT'>	
 	</form>
 	_END;

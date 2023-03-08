@@ -4,6 +4,7 @@
 	</head>
 	
 	<body>
+	<h1> Add a Product </h1>
 		<form method='post' action='addproducts.php'>
 			<pre>
 				ProductID: <input type='text' name='ProductID'>
@@ -27,7 +28,7 @@ $conn = new mysqli($hn, $un, $pw, $db);
 if($conn->connect_error) die($conn->connect_error);
 
 //check if returnid exists
-if(isset($_POST['productid'])) 
+if(isset($_POST['ProductID'])) 
 {
 	//Get data from POST object
 	$ProductID = $_POST['ProductID'];
@@ -38,7 +39,7 @@ if(isset($_POST['productid']))
 		
 	//echo $isbn.'<br>';
 	
-	$query = "INSERT INTO Returns (ProductID, ProductName, Price, Inventory, SkiType) VALUES ('$ProductID', '$ProductName', '$Price', '$Inventory', '$SkiType')";
+	$query = "INSERT INTO Products (ProductID, ProductName, Price, Inventory, SkiType) VALUES ('$ProductID', '$ProductName', '$Price', '$Inventory', '$SkiType')";
 	
 	//echo $query.'<br>';
 	$result = $conn->query($query); 

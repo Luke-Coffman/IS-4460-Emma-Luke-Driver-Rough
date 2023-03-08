@@ -33,14 +33,14 @@ if($conn->connect_error) die($conn->connect_error);
 if(isset($_POST['customerid'])) 
 {
 	//Get data from POST object
-	$CustomerID = $_POST['customerid'];
-	$Firstname = $_POST['firstname'];
-	$Lastname = $_POST['lastname'];
-	$Streetaddress = $_POST['streetaddress'];
-	$City = $_POST['city'];
-	$State = $_POST['state'];
-	$Zipcode = $_POST['zipcode'];
-	$UserID = $_POST['userid'];
+	$customerid = $_POST['customerid'];
+	$firstname = $_POST['firstname'];
+	$lastname = $_POST['lastname'];
+	$streetaddress = $_POST['streetaddress'];
+	$city = $_POST['city'];
+	$state = $_POST['state'];
+	$zipcode = $_POST['zipcode'];
+	$userid = $_POST['userid'];
 	//echo $isbn.'<br>';
 	
 	$query = "INSERT INTO customer (customerid, firstname, lastname, streetaddress, city, state, zipcode, userid) VALUES ('$customerid', '$firstname', '$lastname', '$streetaddress', '$city', '$state', '$zipcode', '$userid')";
