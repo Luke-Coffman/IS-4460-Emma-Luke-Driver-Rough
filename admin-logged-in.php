@@ -13,8 +13,8 @@ require_once  'check-session.php';
 		<p>Admin Number: 1
 		<p>Name: Bill Smith<br><br>
 		<h2> Options</h2>
-		<a href= 'http://localhost/Final%20Project%20Pages/employee-employee-changes.php'>View/add/update/delete Employees</a><br>
-		<a href= 'http://localhost/Final%20Project%20Pages/viewcustomer.php'>View/add/update/delete Customers</a><br>
+		<a href= 'http://localhost/Final%20Project%20Pages/admin-employee-changes.php'>View/add/update/delete Employees</a><br>
+		<a href= 'http://localhost/Final%20Project%20Pages/viewcustomer-admin.php'>View/add/update/delete Customers</a><br>
 		<a href= 'http://localhost/Final%20Project%20Pages/viewproducts.php'>View/add/update/delete Products</a><br>
 		<a href= 'http://localhost/Final%20Project%20Pages/viewrawmaterial.php'>View/add/update/delete Raw Materials</a><br>
 		<a href = 'http://localhost/Final%20Project%20Pages/viewReturns.php'>View/add/update/delete Returns</a><br>

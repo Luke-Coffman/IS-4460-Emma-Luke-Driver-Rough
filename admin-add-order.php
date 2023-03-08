@@ -1,6 +1,6 @@
 <?php
 
-$page_roles=array('admin');
+$page_roles=array('admin,employee');
 require_once  'check-session.php';
 ?>
 

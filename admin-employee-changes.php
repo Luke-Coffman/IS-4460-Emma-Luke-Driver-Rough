@@ -1,14 +1,14 @@
 <?php
-$page_roles=array('admin','employee');
+$page_roles=array('admin');
 require_once  'check-session.php';
 ?>
 <HTML>
 
 	<head>
-	<title>Employee-Employee-Changes</title>
+	<title>Admin-Employee-Changes</title>
 	</head>
 		<h1>Enter The EmployeeID You Want To Edit</h1>
-		<a href = 'http://localhost/Final%20Project%20Pages/employee_logged_in.php'>Back to Employee Homepage</a><br><br>
+		<a href = 'http://localhost/Final%20Project%20Pages/admin-logged-in.php'>Back to Admin Homepage</a><br><br>
 		<form action= 'http://localhost/Final%20Project%20Pages/add-employee.php'> <button type='submit'>Add New Employee</button>	
 		</p>
 	<body>

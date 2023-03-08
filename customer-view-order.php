@@ -10,6 +10,7 @@ require_once  'check-session.php';
 		<h1>My Orders</h1>
 		
 		<form action= 'http://localhost/Final%20Project%20Pages/customer-add-order.php'> <button type = 'submit'> Add an order </button><br><br>
+		<a href = 'http://localhost/Final%20Project%20Pages/Customer-Login-Page.php'>Back to Customer Homepage</a><br><br>
 	<body>
 	
 	</body>

@@ -1,5 +1,5 @@
 <?
-$page_roles=array('admin','customer');
+$page_roles=array('admin','customer','employee');
 require_once  'check-session.php';
 ?>
 
