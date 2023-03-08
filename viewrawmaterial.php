@@ -1,3 +1,8 @@
+<?
+$page_roles=array('admin','customer');
+require_once  'check-session.php';
+?>
+
 <html>
 
 <head>
@@ -9,6 +14,7 @@
 <body>
 
 <h1>Raw Material</h1>
+<a href = 'http://localhost/Final%20Project%20Pages/admin-logged-in.php'>Back to Admin Homepage</a><br><br>
 
 <?php
 

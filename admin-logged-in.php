@@ -16,7 +16,7 @@ require_once  'check-session.php';
 		<a href= 'http://localhost/Final%20Project%20Pages/employee-employee-changes.php'>View/add/update/delete Employees</a><br>
 		<a href= 'http://localhost/Final%20Project%20Pages/viewcustomer.php'>View/add/update/delete Customers</a><br>
 		<a href= 'http://localhost/Final%20Project%20Pages/viewproducts.php'>View/add/update/delete Products</a><br>
-		<p>View/add/update/delete Raw Materials<p>
+		<a href= 'http://localhost/Final%20Project%20Pages/viewrawmaterial.php'>View/add/update/delete Raw Materials</a><br>
 		<a href = 'http://localhost/Final%20Project%20Pages/viewReturns.php'>View/add/update/delete Returns</a><br>
 		<a href= 'http://localhost/Final%20Project%20Pages/admin-view-orders.php'>View/add/update/delete an Order</a><br>
 		<a href= 'http://localhost/Final%20Project%20Pages/employee-products-changes.php'>Make a payment</a><br>

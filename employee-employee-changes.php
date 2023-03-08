@@ -51,7 +51,7 @@ echo <<<_END
 	<form action='delete-employee.php' method='post'>
 		<input type='hidden' name='delete' value='yes'>
 		<input type='hidden' name='employeeid' value='$row[employeeid]'>
-		<input type='submit' value='DELETE ORDER'>	
+		<input type='submit' value='DELETE Employee'>	
 	</form>
 	
 _END;

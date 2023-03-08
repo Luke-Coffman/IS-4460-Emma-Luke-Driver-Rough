@@ -44,7 +44,7 @@ echo <<<_END
 	ProductName: $row[ProductName]
 	Price: $row[Price]
 	Inventory: $row[Inventory]
-	Ski_Type: $row[Ski_Type]
+	SkiType: $row[SkiType]
 	</pre>
 	
 	<form action='deleteproducts.php' method='post'>

@@ -45,6 +45,7 @@ if(isset($_POST['empid'])){
 	$query = "insert into orders(EMP_ID,CUST_ID, DATE, Total_Price,PMT_ID,Description) values ('$empid', '$custid', '$date', '$totalprice','$paymentid','$description')";
 	$result = $conn->query($query);
 	if(!$result) die($conn->error);
+	header("Location: admin-view-orders.php");
 }
 
 $conn->close();

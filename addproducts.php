@@ -42,11 +42,11 @@ if(isset($_POST['ProductID']))
 	$ProductName = $_POST['ProductName'];
 	$Price = $_POST['Price'];
 	$Inventory = $_POST['Inventory'];
-	$Ski_Type = $_POST['Ski_Type'];
+	$SkiType = $_POST['SkiType'];
 		
 	//echo $isbn.'<br>';
 	
-	$query = "INSERT INTO Products (ProductID, ProductName, Price, Inventory, Ski_Type) VALUES ('$ProductID', '$ProductName', '$Price', '$Inventory', '$Ski_Type')";
+	$query = "INSERT INTO Products (ProductID, ProductName, Price, Inventory, SkiType) VALUES ('$ProductID', '$ProductName', '$Price', '$Inventory', '$SkiType')";
 	
 	//echo $query.'<br>';
 	$result = $conn->query($query); 
