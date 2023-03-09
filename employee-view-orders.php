@@ -46,7 +46,7 @@ echo <<<_END
 	<pre>
 	Order_ID: $row[Order_ID]
 	EMP_ID: $row[EMP_ID]
-	CUST_ID: $row[CUST_ID]
+	customerid: $row[customerid]
 	Date: $row[DATE]
 	Total_Price: $row[Total_Price]
 	Description: $row[Description]
