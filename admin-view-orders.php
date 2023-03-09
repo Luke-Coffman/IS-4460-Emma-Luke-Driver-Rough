@@ -11,6 +11,7 @@ require_once  'check-session.php';
 		<h1>Order History </h1>	
 		</p>
 		<a href = 'http://localhost/Final%20Project%20Pages/admin-logged-in.php'>Back to Admin Homepage</a><br><br>
+		<a href='logout.php'>Logout</a><br><br>
 		<a href="admin-add-order.php"><button>Add Order</button></a>
 		
 	<body>
@@ -45,7 +46,7 @@ echo <<<_END
 	<pre>
 	Order_ID: $row[Order_ID]
 	EMP_ID: $row[EMP_ID]
-	CUST_ID: $row[CUST_ID]
+	customerid: $row[customerid]
 	Date: $row[DATE]
 	Total_Price: $row[Total_Price]
 	Description: $row[Description]
@@ -55,6 +56,12 @@ echo <<<_END
 		<input type='hidden' name='delete' value='yes'>
 		<input type='hidden' name='Order_ID' value='$row[Order_ID]'>
 		<input type='submit' value='DELETE ORDER'>	
+	</form>
+	
+	<form action = 'updatecustomer.php' method='post'>
+		<input type='hidden' name='update' value='yes'>
+		<input type='hidden' name='customerid' value='$row[customerid]'>
+		<input type='submit' value='UPDATE CUSTOMER'>
 	</form>
 	
 _END;

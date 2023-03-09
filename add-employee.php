@@ -10,6 +10,7 @@ require_once  'check-session.php';
 	
 	<body>
 	<a href = 'http://localhost/Final%20Project%20Pages/employee-employee-changes.php'>Back to employee list</a><br><br>
+	<a href='logout.php'>Logout</a><br><br>
 		<form method='post' action='add-employee.php'>
 			<pre>
 				EmployeeID: <input type='text' name='employeeid'>

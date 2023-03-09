@@ -9,8 +9,9 @@ require_once  'check-session.php';
 	</head>
 		<h1>My Orders</h1>
 		
-		<form action= 'http://localhost/Final%20Project%20Pages/customer-add-order.php'> <button type = 'submit'> Add an order </button><br><br>
 		<a href = 'http://localhost/Final%20Project%20Pages/Customer-Login-Page.php'>Back to Customer Homepage</a><br><br>
+		<a href='logout.php'>Logout</a><br><br>
+		<form action= 'http://localhost/Final%20Project%20Pages/customer-add-order.php'> <button type = 'submit'> Add an order </button><br><br>
 	<body>
 	
 	</body>
@@ -23,7 +24,7 @@ require_once  'login.php';
 $conn = new mysqli($hn, $un, $pw, $db);
 if($conn->connect_error) die($conn->connect_error);
 
-$query = "SELECT * FROM orders WHERE CUST_ID = 1";
+$query = "SELECT * FROM orders WHERE customerid = 2";
 
 $result = $conn->query($query); 
 if(!$result) die($conn->error);
@@ -39,7 +40,7 @@ echo <<<_END
 	<pre>
 	Order_id: $row[Order_ID]
 	Emp_ID: $row[EMP_ID]
-	Customer_ID: $row[CUST_ID]
+	customerid: $row[customerid]
 	Date: $row[DATE]
 	Total Price: $row[Total_Price]
 	Payment ID: $row[PMT_ID]

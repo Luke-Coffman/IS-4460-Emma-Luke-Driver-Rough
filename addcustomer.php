@@ -11,6 +11,8 @@ require_once  'check-session.php';
 	
 	<body>
 	<h1> Add A Customer</h1>
+	<a href = 'http://localhost/Final%20Project%20Pages/viewcustomer-admin.php'>Back to Customer List</a><br><br>
+	<a href='logout.php'>Logout</a><br><br>
 		<form method='post' action='addcustomer.php'>
 			<pre>
 				CustomerID: <input type='text' name='customerid'>
@@ -56,7 +58,7 @@ if(isset($_POST['customerid']))
 	$result = $conn->query($query); 
 	if(!$result) die($conn->error);
 	
-header("Location: viewcustomer.php");//this will return you to the view all page
+header("Location: viewcustomer-admin.php");//this will return you to the view all page
 	
 	
 	

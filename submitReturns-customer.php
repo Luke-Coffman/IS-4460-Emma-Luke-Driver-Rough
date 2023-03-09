@@ -4,10 +4,10 @@
 	</head>
 	
 	<body>
-	<h1> Add Returns </h1>
+	<h1> Submit Returns </h1>
 	<a href='logout.php'>Logout</a><br><br>
-		<form method='post' action='addReturns.php'>
-		<a href = 'http://localhost/Final%20Project%20Pages/viewReturns.php'>Back to Return List</a><br><br>
+		<form method='post' action='submitReturns.php'>
+		<a href = 'http://localhost/Final%20Project%20Pages/Customer-Login-Page.php'>Back to Customer Homepage</a><br><br>
 			<pre>
 				ReturnID: <input type='text' name='ReturnID'>
 				Date: <input type='text' name='Date'>

@@ -15,6 +15,7 @@ require_once  'check-session.php';
 
 <h1>List of Customers</h1>
 <a href = 'http://localhost/Final%20Project%20Pages/admin-logged-in.php'>Back to Admin Homepage</a><br><br>
+<a href='logout.php'>Logout</a><br><br>
 <a href="addcustomer.php"><button>Add Customer</button></a>
 
 <?php
@@ -54,6 +55,13 @@ echo <<<_END
 		<input type='hidden' name='customerid' value='$row[customerid]'>
 		<input type='submit' value='DELETE CUSTOMER'>	
 	</form>
+	
+	<form action = 'updatecustomer.php' method='post'>
+		<input type='hidden' name='update' value='yes'>
+		<input type='hidden' name='customerid' value='$row[customerid]'>
+		<input type='submit' value='UPDATE CUSTOMER'>
+	</form>
+	
 	_END;
 }
 

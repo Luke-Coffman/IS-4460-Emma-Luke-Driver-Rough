@@ -20,7 +20,7 @@ if(isset($_POST['delete']))
 	if(!$result) die($conn->error);
 	
 	//Return to the viewallcustomer page
-	header("Location: viewcustomer.php");
+	header("Location: viewcustomer-admin.php");
 	
 }
 

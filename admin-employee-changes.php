@@ -8,6 +8,7 @@ require_once  'check-session.php';
 	<title>Admin-Employee-Changes</title>
 	</head>
 		<h1>Enter The EmployeeID You Want To Edit</h1>
+		<a href='logout.php'>Logout</a><br><br>
 		<a href = 'http://localhost/Final%20Project%20Pages/admin-logged-in.php'>Back to Admin Homepage</a><br><br>
 		<form action= 'http://localhost/Final%20Project%20Pages/add-employee.php'> <button type='submit'>Add New Employee</button>	
 		</p>

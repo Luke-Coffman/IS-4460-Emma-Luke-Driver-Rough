@@ -1,22 +1,21 @@
-<?php
+<?
 $page_roles=array('admin','employee');
 require_once  'check-session.php';
-
 ?>
+
 <html>
 
 <head>
 
-	<title>Customers</title>
+	<title>Raw Material</title>
 	
 </head>
 
 <body>
 
-<h1>List of Customers</h1>
+<h1>Raw Material</h1>
 <a href = 'http://localhost/Final%20Project%20Pages/employee_logged_in.php'>Back to Employee Homepage</a><br><br>
 <a href='logout.php'>Logout</a><br><br>
-<a href="addcustomer.php"><button>Add Customer</button></a>
 
 <?php
 
@@ -25,7 +24,7 @@ require_once  'login.php';
 $conn = new mysqli($hn, $un, $pw, $db);
 if($conn->connect_error) die($conn->connect_error);
 
-$query = "SELECT * FROM customer";
+$query = "SELECT * FROM Raw_Material";
 
 $result = $conn->query($query); 
 if(!$result) die($conn->error);
@@ -40,21 +39,11 @@ for($j=0; $j<$rows; $j++)
 
 echo <<<_END
 	<pre>
-	customerid: $row[customerid]
-	firstname: $row[firstname]
-	lastname: $row[lastname]
-	streetaddress: $row[streetaddress]
-	city: $row[city]
-	state: $row[state]
-	zipcode: $row[zipcode]
-	userid: $row[userid]
+	MaterialID: $row[MaterialID]
+	DatePurchased: $row[DatePurchased]
+	Quantity: $row[Quantity]
+	MaterialName: $row[MaterialName]
 	</pre>
-	
-	<form action='deletecustomer.php' method='post'>
-		<input type='hidden' name='delete' value='yes'>
-		<input type='hidden' name='customerid' value='$row[customerid]'>
-		<input type='submit' value='DELETE CUSTOMER'>	
-	</form>
 	_END;
 }
 

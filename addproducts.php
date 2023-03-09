@@ -12,6 +12,7 @@ require_once  'check-session.php';
 	<body>
 	<h1> Add a Product </h1>
 	<a href = 'http://localhost/Final%20Project%20Pages/viewproducts.php'>Back to Product List</a><br><br>
+	<a href='logout.php'>Logout</a><br><br>
 		<form method='post' action='addproducts.php'>
 			<pre>
 				ProductID: <input type='text' name='ProductID'>
